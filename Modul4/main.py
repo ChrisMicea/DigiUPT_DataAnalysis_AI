@@ -37,7 +37,6 @@ def load_seaborn_titanic():
         df['survived'] = df['survived'].astype(int)
     return df
 
-print('done')
 
 # aici nu mai cache-uim pt ca se presupune ca dam upload o data sau de putine ori la aplicatie, dar
 # by default, functia de mai sus se incarca si executa de fiecare data cand dam refresh sau rerender la pagina => trb sa fie rapid
@@ -50,7 +49,7 @@ def load_uploaded_csv(uploaded_file):
     return df
 
 df = load_seaborn_titanic()
-print('done_after')
+
 
 # Sidebar: sursa datelor
 st.sidebar.header('Sursă Date & Filtre')

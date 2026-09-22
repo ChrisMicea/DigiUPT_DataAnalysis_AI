@@ -1,0 +1,4 @@
+Theory/
+
+# Not really necessary because the venv has its own .gitignore with "*" as its contents
+.venv/
